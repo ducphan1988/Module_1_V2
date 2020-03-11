@@ -1,0 +1,42 @@
+.khung{
+    margin-top: 50px;
+    width: 400px;
+    background-color: white;
+}
+
+
+.hang1{
+    height: 80px;
+    width: 400px;
+    background-image: url(image/c1.jpg);
+    background-size: cover;
+    border: 2px solid blue;
+}
+.hang2{
+    height: 80px;
+    width: 400px;
+    background-image: url(image/a2.jpg);
+    background-size: cover;
+    border: 2px solid blue;
+}
+.hang3{
+    height: 80px;
+    width: 400px;
+    background-image: url(image/b3.jpg);
+    background-size: cover;
+    border: 2px solid blue;
+}
+.hang4{
+    height: 80px;
+    width: 400px;
+    background-image: url(image/a4.jpg);
+    background-size: cover;
+    border: 2px solid blue;
+}
+.hang5{
+    height: 80px;
+    width: 400px;
+    background-image: url(image/c5.jpg);
+    background-size: cover;
+    border: 2px solid blue;
+}

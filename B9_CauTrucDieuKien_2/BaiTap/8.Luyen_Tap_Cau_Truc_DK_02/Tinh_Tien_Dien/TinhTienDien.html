@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let csm = parseInt(prompt("nhập chỉ số mới"));
+    let csc = parseInt(prompt("nhập chỉ số cũ"));
+    let tieuthu = (csm - csc);
+    if (tieuthu <= 100) {
+        alert("số tiền phải đóng là" + tieuthu * 1000);
+    } else if (tieuthu <= 150) {
+        alert("số tiền phải đóng là" + tieuthu * 1200);
+    } else if (tieuthu <= 200) {
+        alert("sô tiền phải đóng là" + tieuthu * 2000);
+    } else {
+        alert("sô tiền phải đóng là" + tieuthu * 2500);
+    }
+</script>
+</body>
+</html>

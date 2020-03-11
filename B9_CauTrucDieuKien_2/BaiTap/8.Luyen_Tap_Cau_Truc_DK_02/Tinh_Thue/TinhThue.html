@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let ml = parseInt(prompt("nhập số tiền"));
+    if (ml < 5000000) {
+        alert("số tiền nộp thuế" + ml * 5 / 100);
+    } else if (ml > 5000000 && ml < 10000000) {
+        alert("số tiền nộp thuế" + ml *6 / 100);
+    } else if (ml > 10000000 && ml < 18000000) {
+        alert("số tiền nộp thuế" + ml * 7 / 100);
+    } else if (ml > 18000000 && ml < 32000000) {
+        alert("số tiền nộp thuế" + ml * 8 / 100);
+    } else if (ml > 32000000 && ml < 52000000) {
+        alert("sô tiền nộp thuế" + ml * 9 / 100);
+    } else {
+        alert("số tiền nộp thuế" + ml * 10 /100);
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="in" >
+<input value="Tính tiền lãi" onclick="tienlai();" type="button">
+<p id="on"></p>
+<script>
+    function tienlai() {
+        var a = document.getElementById("in").value;
+        var b = document.getElementById("on").value;
+        if (a < 10000000) {
+            b = a * 5 / 100
+        } else {
+            if (a < 20000000) {
+                b = a * 10 / 100;
+            } else {
+                b = a * 20 / 100;
+            }
+        }
+        document.getElementById("in").innerHTML = a;
+        document.getElementById("on").innerHTML = b;
+        document.getElementById("in").value = "";
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function Mouse( name, weight, speed) {
+        this.name= name;
+        this.weight= weight;
+        this.speed= speed;
+        this.status=true;
+        this.greeting=function(){
+            alert("chit, chit");
+        };
+        this.getWeight= function() {
+            return this.weight;
+        };
+        this.setWeight= function (newWeight) {
+            this.weight= newWeight;
+        }
+        this.setDead= function () {
+            this.status= false;
+        }
+        this.getSpeed= function () {
+            return this.speed;
+        }
+        this.getStatus= function () {
+            return this.status;
+        }
+        this.getName= function () {
+            return this.name
+        }
+    }
+    let mouse1= new Mouse( 'Duc',50,50);
+    let mouse2= new Mouse( 'Trung',52,70);
+    let mouse3= new Mouse( 'Hai',62,50);
+    function Cat (name, maxSpeed, weight) {
+        this.name = name;
+        this.maxSpeed = maxSpeed;
+        this.weight = weight;
+        this.greeting = function () {
+            alert(" Meoo..meoo..ta là mèo" + this.name);
+        };
+        this.catchMouse = function (mouse) {
+            if (this.maxSpeed > mouse.getSpeed()) {
+                alert(this.name + ' bắt được chuột ' + mouse.getName())
+            }else {
+                alert( this.name+ ' không bắt được chuột ' + mouse.getName())
+            }
+        };
+        this.eatMouse = function (mouse) {
+            if (mouse.getStatus()) {
+                this.weight += mouse.getWeight();
+                mouse.setDead();
+                alert(this.name + " đã ăn chuột " + mouse.getName() + this.weight)
+            }
+        }
+    }
+    let catBach= new Cat('Bach',60,75);
+    let name= catBach.greeting();
+    let cat1=catBach.catchMouse(mouse1);
+    let cat2=catBach.catchMouse(mouse2);
+    let cat3=catBach.catchMouse(mouse3);
+    let eatMouse= catBach.eatMouse(mouse1);
+    let setSpeed= mouse1.setWeight(1000);
+</script>
+
+</body>
+</html>

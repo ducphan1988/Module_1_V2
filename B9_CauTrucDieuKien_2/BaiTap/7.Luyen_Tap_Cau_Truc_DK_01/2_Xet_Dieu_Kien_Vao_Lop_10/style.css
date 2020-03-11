@@ -1,0 +1,8 @@
+.khung{
+    height: 450px;
+    width: 400px;
+    background-color: rgb(169, 206, 194);
+    box-shadow: 5px 5px 5px rgb(161, 153, 153);
+    margin-top: 50px;
+    border-radius: 5%;
+}

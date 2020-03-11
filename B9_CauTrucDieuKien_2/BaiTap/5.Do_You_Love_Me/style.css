@@ -1,0 +1,14 @@
+.khung{
+    height: 400px;
+    width: 400px;
+    margin-top: 80px;
+    background-color: rgb(169, 204, 192);
+    border-radius: 10%;
+    box-shadow: 5px 5px 5px rgb(112, 142, 145);
+}
+
+.noButton{
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
